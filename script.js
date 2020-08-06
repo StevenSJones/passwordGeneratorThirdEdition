@@ -1,21 +1,15 @@
-var generateBtn = document.getElementById("generate");//assigning generateBtn to a DOM method that looks at the HTML and any elements that match this specific ID
-var charInput = document.getElementById("numOfChar");
-var upperInput = document.getElementById("upperCase");
-var lowerInput = document.getElementById("lowerCase");
-var specInput = document.getElementById("specChar");
-var numbersInput = document.getElementById("numbers");
+var generateBtn = document.querySelector("#generate");//assigning
 
-const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+//min and max chars per specs
 var minChar = 8;
 var maxChar = 128;
 
-// User variables
-var numOfChar = 0;
-var specChar = false;
-var nums = false;
-var upperCase = false;
-var lowerCase = false;
 
+// constant Array of numbers to be included in password declared globally
+const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+// constant Array of special chars to be included in password declared globally
 const specialCharacters = [
     "@",
     "%",
@@ -105,10 +99,8 @@ const specialCharacters = [
 //   this is the empty var that will hold the password ultimately
   var password = "";
 
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+// function to write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -117,5 +109,55 @@ function writePassword() {
 
 }
 
+//pull single random number index from specified array
+function getRand(arr){
+  var randOut = arr[(Math.floor(Math.random() * arr.length))];
+  return randOut;
+  //console.log(randOut);
+}
+
+//Main password generating function
+function generatePassword(){
+  //setting options equal to an empty object
+  var options = {};
+ 
+  //prompting the user to input desired password length.
+  //using the parseInt function to turn any input that isn't a number to a number.
+  options.length = parseInt(prompt("How many characters from 8 - 128 would you like for your password to be?"));
+
+  //Logic for the min/max char parameters
+  if (options.length < 8 || options.length > 128){
+    alert("Please input between 8 and 128 characters for the generator to process your password request.");
+    return "Invalid parameters"
+  }
+  //prompting the user for the character-inclusive options in the form of confirms
+  //going into the options object...
+  options.special = confirm("Would you like for your password to include special characters?");
+  options.numbers = confirm("Would you like for your password to include numbers?");
+  options.upperCase = confirm("Would you like for your password to include upper-cased characters?");
+  options.lowerCase = confirm("Would you like for your password to include lower-cased characters?");
+
+  //logic in the form of a for loop
+  for (var i = 0; i < options.length; i++) {
+
+    //generate a random number 
+    var optionSelect = (Math.floor(Math.random()));
+
+    if (options.special && optionsSelect === 0) {
+      var PullOut = getRand(arrSpecial);
+    }
+    if (options.numbers && optionsSelect === 0) {
+      var PullOut = getRand(arrNumber);
+  }
+  if (options.upperCase && optionsSelect === 0) {
+    var PullOut = getRand(arrUpper);
+}
+if (options.lowerCase && optionsSelect === 0) {
+  var PullOut = getRand(arrLower);
+  }
+  //Displays the characters inline next to the others in the password
+return PullOut;
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+}
