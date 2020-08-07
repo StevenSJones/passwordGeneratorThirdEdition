@@ -86,7 +86,7 @@ header {
 .btn {
   border: none;
   font-family: Bookman, serif;
-  background-color: midnightblue;
+  background-color:red;
   color: rgb(255, 248, 220);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
