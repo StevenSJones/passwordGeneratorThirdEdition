@@ -3,7 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+q{
+  color:midnightblue;
+}
 html,
 body,
 .wrapper {
@@ -11,7 +13,11 @@ body,
   margin: 0;
   padding: 0;
 }
-
+h1{
+  color: red;
+  text-shadow: 3px 3px midnightblue;
+  font-size: 80px;
+}
 h2 {
   color: midnightblue;
   font-family: Bookman, serif;
