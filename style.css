@@ -12,6 +12,7 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 h1{
   color: red;
@@ -29,9 +30,9 @@ text-align: center;
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
   font-family: Bookman, serif;
   background-color: rgb(255, 248, 220);
+  background: linear-gradient(#f9fbfd 20%, rgb(255, 248, 220));
 }
 
 .wrapper {
@@ -44,7 +45,7 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  /* color: hsl(206, 17%, 28%); */
 }
 
 .card {
