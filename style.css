@@ -21,23 +21,13 @@ p {
   color: midnightblue;
 }
 
-.mainDisplay {
-  font-size: 6rem;
-  font-family: Bookman, serif;
-  font-weight: bolder;
-  background: linear-gradient(to right, red, midnightblue);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  margin: 0;
-}
-
 h2 {
   color: red;
-  text-shadow: 1px 2px hsl(206, 17%, 28%);;
+  text-shadow: 1px 2px hsl(206, 17%, 28%);
   font-size: 2rem;
 }
 
+/* do NOT use padding typically but in this case it is inside of another element so it did NOT cause adverse effects */
 header {
   display: block;
   text-align: center;
@@ -51,14 +41,29 @@ footer {
   color: rgb(255, 248, 220);
 }
 
-.container {
-  height:calc(100vh - 7%);
-  margin-right: 15%;
-  margin-left: 15%;
-
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
 }
 
-mainContainer
+.mainDisplay {
+  font-size: 6rem;
+  font-family: Bookman, serif;
+  font-weight: bolder;
+  background: linear-gradient(to right, red, midnightblue);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin: 0;
+}
+
+/* 
+the calc height is used to make certain that the overall height of the page is 100vh. Do NOT use % on the first num, use vh instead. the footer height is 5% so start by subtracting 5% from 100vh and go from there. If the footer was 7% we would start by 100vh - 7%, etc */
+.container {
+  height: calc(100vh - 7%);
+  margin-right: 15%;
+  margin-left: 15%;
+}
 
 .card {
   background-color: hsl(0, 0%, 100%);
@@ -123,11 +128,6 @@ mainContainer
   box-shadow: midnightblue 0px 2px 8px 0px;
 }
 
-button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
-}
-
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -165,5 +165,3 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
-
-
