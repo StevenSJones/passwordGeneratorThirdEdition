@@ -18,15 +18,19 @@ p {
   color: midnightblue;
 }
 
-h1 {
-  color: red;
-  text-shadow: 3px 3px midnightblue;
-  font-size: 5rem;
+.mainDisplay {
+  font-size: 6rem;
+  font-family: Bookman, serif;
+  font-weight: bolder;
+  padding: 10px;
+  background: linear-gradient(to right, red, midnightblue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 h2 {
   color: red;
-  text-shadow: 1px 2px midnightblue;
+  text-shadow: 1px 2px hsl(206, 17%, 28%);;
   font-size: 2rem;
 }
 
@@ -38,6 +42,7 @@ header {
 
 footer {
   display: block;
+  height: 100%;
   width: 100%;
   padding-top: 10%;
   color: rgb(255, 248, 220);
@@ -91,7 +96,7 @@ footer {
 .btn {
   border: none;
   font-family: Bookman, serif;
-  background: linear-gradient(red, midnightblue);
+  background: linear-gradient(to right, red, midnightblue);
   color: rgb(255, 248, 220);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
