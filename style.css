@@ -46,16 +46,6 @@ button[disabled] {
   background: #c0c7cf;
 }
 
-.mainDisplay {
-  font-size: 6rem;
-  font-family: Bookman, serif;
-  font-weight: bolder;
-  background: linear-gradient(to right, red, midnightblue);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  margin: 0;
-}
 
 /* 
 the calc height is used to make certain that the overall height of the page is 100vh. Do NOT use % on the first num, use vh instead. the footer height is 5% so start by subtracting 5% from 100vh and go from there. If the footer was 7% we would start by 100vh - 7%, etc */
@@ -78,6 +68,17 @@ the calc height is used to make certain that the overall height of the page is 1
   padding-bottom: 2%;
   padding-left: 2%;
   width: 80%;
+}
+
+.mainDisplay {
+  font-size: 6rem;
+  font-family: Bookman, serif;
+  font-weight: bolder;
+  background: linear-gradient(to right, red, midnightblue);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin: 0;
 }
 
 .card-header::after {
