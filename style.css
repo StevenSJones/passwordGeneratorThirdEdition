@@ -5,8 +5,11 @@
 }
 
 body {
-  height: 100%;
+  height: 100vh;
   font-family: Bookman, serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
   background: linear-gradient(#f9fbfd 20%, rgb(255, 248, 220));
 }
 
@@ -22,11 +25,11 @@ p {
   font-size: 6rem;
   font-family: Bookman, serif;
   font-weight: bolder;
-  padding: 10px;
   background: linear-gradient(to right, red, midnightblue);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  margin: 0;
 }
 
 h2 {
@@ -38,16 +41,24 @@ h2 {
 header {
   display: block;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 100px;
 }
 
 footer {
   display: block;
-  height: 100%;
+  height: 5%;
   width: 100%;
-  padding-top: 10%;
   color: rgb(255, 248, 220);
 }
+
+.container {
+  height:calc(100vh - 7%);
+  margin-right: 15%;
+  margin-left: 15%;
+
+}
+
+mainContainer
 
 .card {
   background-color: hsl(0, 0%, 100%);
