@@ -3,61 +3,59 @@
 *::after {
   box-sizing: border-box;
 }
-q{
-  color:midnightblue;
-}
-html,
-body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-h1{
-  color: red;
-  text-shadow: 3px 3px midnightblue;
-  font-size: 80px;
-}
-h2 {
-  color: midnightblue;
-  font-family: Bookman, serif;
-}
-
-#centerText {
-text-align: center;
-}
 
 body {
-  font-family: sans-serif;
+  height: 100%;
   font-family: Bookman, serif;
-  background-color: rgb(255, 248, 220);
   background: linear-gradient(#f9fbfd 20%, rgb(255, 248, 220));
 }
 
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+html {
+  text-align: center;
+}
+
+p {
+  color: midnightblue;
+}
+
+h1 {
+  color: red;
+  text-shadow: 3px 3px midnightblue;
+  font-size: 5rem;
+}
+
+h2 {
+  color: red;
+  text-shadow: 1px 2px midnightblue;
+  font-size: 2rem;
 }
 
 header {
+  display: block;
   text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  /* color: hsl(206, 17%, 28%); */
+  padding-top: 5%;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  padding-top: 10%;
+  color: rgb(255, 248, 220);
 }
 
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  box-shadow: midnightblue 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
+  margin: auto;
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  width: 80%;
 }
 
 .card-header::after {
@@ -72,28 +70,28 @@ header {
   min-height: 100px;
 }
 
-.card-footer {
-  text-align: center;
-}
-
 .card-footer::before {
-  content: " ";
   display: block;
+  content: " ";
   width: 100%;
   background: #e7e9eb;
   height: 2px;
 }
 
+.card-footer {
+  text-align: center;
+  display: block;
+}
+
 .card-footer::after {
   content: " ";
-  display: block;
   clear: both;
 }
 
 .btn {
   border: none;
   font-family: Bookman, serif;
-  background-color:red;
+  background: linear-gradient(red, midnightblue);
   color: rgb(255, 248, 220);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
@@ -105,6 +103,7 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  box-shadow: midnightblue 0px 2px 8px 0px;
 }
 
 button[disabled] {
@@ -112,15 +111,10 @@ button[disabled] {
   background: #c0c7cf;
 }
 
-.float-right {
-  float: right;
-}
-
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: none;
   display: block;
   width: 100%;
   padding-top: 15px;
@@ -131,7 +125,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px dashed red;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
@@ -154,3 +148,5 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
+
+

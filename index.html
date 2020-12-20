@@ -8,21 +8,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <div class="justify-content-center">
-        <h1>Password Generator</h1>
-        <q>Click the "Generate Password" button below to begin generating a password based on your answer to a series of questions.</q>
-        <hr style="color: white; border-top: 1px dotted red; width: 58%;" />
-        <br/>
-        
-      </div>
+    <div class="container">
+      <header class="container">
+        <div class="row">
+          <h1>Password Generator</h1>
+          <p>
+            Click the "Generate Password" button below to begin generating a
+            password based on your answer to a series of questions.
+          </p>
+          <hr style="color: white; border-top: 1px dotted red; width: 58%" />
+          <br />
+        </div>
       </header>
-      <div class="card">
-        <div id = "centerText" class="card-header">
+
+      <div class="container card">
+        <div class="row card-header">
           <h2>Generate a Password</h2>
         </div>
-        <div class="card-body">
+        <div class="row card-body">
           <textarea
             readonly
             id="password"
@@ -30,12 +33,18 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
-        <div class="card-footer">
+        <div class="row card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
+      <br />
+      <hr style="color: white; border-top: 1px dotted red; width: 58%" />
+      <div class="container">
+        <footer class="row">
+          <p>&copy; Steven Jones 2020</p>
+        </footer>
+      </div>
     </div>
-    
     <script src="script.js"></script>
   </body>
 </html>
