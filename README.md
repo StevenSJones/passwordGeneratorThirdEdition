@@ -1,7 +1,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/stevensjones/passwordGeneratorThirdEdition)
 # Title:
 > passwordGeneratorThirdEdition
-## description: 
+## Description: 
 > This browser application; which features responsive interface adaptation and dynamically updated HTML and CSS powered by JavaScript code, generates a random password based on user-selected criteria.
 > https://stevensjones.github.io/passwordGeneratorThirdEdition/
 
