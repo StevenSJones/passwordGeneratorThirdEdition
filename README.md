@@ -8,6 +8,7 @@
 ## Table of Contents:
 - [title](#Title)
 - [description](#Description)
+- [Table Of Contents](#TableOfContents)
 - [Prerequisites](#Prerequisites)
 - [Tests](#Tests)
 - [Contributing](#Contributing)
