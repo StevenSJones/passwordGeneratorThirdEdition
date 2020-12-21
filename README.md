@@ -3,11 +3,13 @@
 > passwordGeneratorThirdEdition
 ## description: 
 > This browser application; which features responsive interface adaptation and dynamically updated HTML and CSS powered by JavaScript code, generates a random password based on user-selected criteria.
->
->
+> https://stevensjones.github.io/passwordGeneratorThirdEdition/
+
+>![Screen Shot 2020-12-21 at 12 58 48 PM](https://user-images.githubusercontent.com/56704209/102817556-385cfd00-438d-11eb-820c-e9b32ba23671.png)
+
 ## Table of Contents:
-- [title](#Title)
-- [description](#Description)
+- [Title](#Title)
+- [Description](#Description)
 - [Table Of Contents](#TableOfContents)
 - [Prerequisites](#Prerequisites)
 - [Tests](#Tests)
