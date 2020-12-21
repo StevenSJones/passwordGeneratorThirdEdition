@@ -25,7 +25,7 @@
 ## Usage:
 > 
 ## License
->  © 2020 Steven Jones. All Rights Reserved
+> © 2020 Steven Jones. All Rights Reserved
 ## Further Contact:
 > Feel free to reach out to me with questions involving this project on GITHUB at : [stevensjones](https://github.com/stevensjones);
 
