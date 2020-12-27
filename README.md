@@ -19,14 +19,12 @@
 - [Further Contact](#FurtherContact)
 ## Prerequisites:
 > All you need to run this application is an internet connection and the browser of your choice.  
-## Usage:
-> Anybody that requires a password or that particularly has access to sensitive data may use this generator to randomly generate a password that meets certain user-selected criteria. This allows one to create a strong password that provides greater security for the user.  
 ## Tests:
 > None
 ## Contributing:
 > Steven Jones
 ## Usage:
-> 
+> Anybody that requires a password or that particularly has access to sensitive data may use this generator to randomly generate a password that meets certain user-selected criteria. This allows one to create a strong password that provides greater security for the user.  
 ## License
 > © 2020 Steven Jones. All Rights Reserved
 ## Further Contact:
