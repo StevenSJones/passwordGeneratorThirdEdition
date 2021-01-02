@@ -92,6 +92,11 @@ the calc height is used to make certain that the overall height of the page is 1
   min-height: 100px;
 }
 
+.card-footer {
+  text-align: center;
+  display: block;
+}
+
 .card-footer::before {
   display: block;
   content: " ";
@@ -100,10 +105,6 @@ the calc height is used to make certain that the overall height of the page is 1
   height: 2px;
 }
 
-.card-footer {
-  text-align: center;
-  display: block;
-}
 
 .card-footer::after {
   content: " ";
